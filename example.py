@@ -4,7 +4,6 @@ a = 5
 b = 0
 # complicated loops
 while a > 3:
-    label .stop
     for i in range(a+1):
         for j in range(a, i+a):
             while j < 10:
@@ -13,5 +12,5 @@ while a > 3:
                 # welp goto has you covered
                 b = j * 2
                 goto .stop  
-
+label .stop
 print('value of b',b)
